@@ -1,23 +1,32 @@
-let question1=prompt("which is the capital of india? a)chennai b)mumbai c)delhi d)kolkata");
-let score=0
-if(question1=="c" || question1=="delhi"){
-alert("correct answer");
-score++;
-}else{
-    alert("wrong answer");
+let question1=prompt('capital of India?')
+let point=0
+if (question1.toLowerCase()=='delhi') {
+alert('correct answer')
+point=point+1
 }
-let question2=prompt("which is the capital of tamilnadu? a)chennai b)mumbai c)delhi d)kolkata");
-if(question2=="a" || question2=="chennai"){
-alert("correct answer");
-score++;
-}else{
-    alert("wrong answer");
+else{
+    alert('wrong answer')
 }
-let question3=prompt("which is the capital of karnataka? a)chennai b)mumbai c)bangalore d)kolkata");
-if(question3=="c" || question3=="bangalore"){
-alert("correct answer");
-score++;
-}else{
-    alert("wrong answer");
+let question2=prompt('5+6=?')
+if (question2=='11'){
+    alert('correct answer')
+    point=point+1
+} else{
+    alert('wrong answer')
 }
-alert("Your score is: " + score);
+let question3=prompt('capital of USA?')
+if (question3.toLowerCase()=='washington dc'){
+    alert('correct answer')
+    point=point+1
+} else{
+    alert('wrong answer')
+}
+if (point==3) {
+    alert('you are genius')
+}else if (point==2) {
+    alert('you are good')
+}else if (point==1) {
+    alert('you need to improve')
+}else{
+    alert('you are fail')
+}
